@@ -1,8 +1,55 @@
 h1 {
   text-align: center;
-  color: blue;
+  color: white;
+  font-size: 42px;
 }
 
-body {
-  bg-color: purple;
+h4 {
+  color: white;
+  text-align: center;
+}
+
+body{
+  background-image: url("https://ih0.redbubble.net/image.33213025.7469/flat,900x900,070,f.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+table {
+  width: 100%
+}
+
+td{
+  width: 16.6666%;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.miners {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.minersC {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.btn {
+  font-size: 11px;
+}
+
+#intro-text {
+  text-align: center;
+  color: white;
 }
