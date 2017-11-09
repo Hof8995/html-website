@@ -1,9 +1,56 @@
 <html>
-<head>
-<title>Website</title>
-<style href = "style.css"></style>
-</head>
-<h1 style = "text-allign:center;">Welcome to the Web!</h1>
-<br>
-<body>Hi!</body>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+    <title>Minecraft Clicker</title>
+  </head>
+  <body>
+    <h1>Minecraft Clicker</h1>
+    <p id="intro-text">Click on the resources to get points. Use the points to upgrade to a new resource.</p>
+    <p id="intro-text">You should buy minecraft!<a href="https://minecraft.net/en/"> CLICK HERE</a></p>
+    <h4 id="point-counter">POINTS: 0</h4>
+    <table>
+      <tr>
+        <td><br></td>
+        <td><button style="background-color: white;" type="button" class="btn" id = "stn" onclick="ulckStone()">UNLOCK</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" id = "coal" onclick="ulckCoal()">UNLOCK</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" id = "irn" onclick="ulckIron()">UNLOCK</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" id = "gld" onclick="ulckGold()">UNLOCK</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" id = "dimnd" onclick="ulckDiamond()">UNLOCK</button></td>
+      </tr>
+      <tr>
+        <td><button style="background-color: lightgreen;" type="button" onclick="grassClick()">GRASS</button></td>
+        <td><button style="background-color: lightgrey;" type="button" class = "disabled" onclick="stoneClick()">STONE</button></td>
+        <td><button style="background-color: black; color: white;" type="button" name="button" class = "disabled" onclick="coalClick()">COAL</button></td>
+        <td><button style="background-color: white;" type="button" name="button" class = "disabled" onclick="ironClick()">IRON</button></td>
+        <td><button style="background-color: gold;" type="button" name="button" class = "disabled" onclick="goldClick()">GOLD</button></td>
+        <td><button style="background-color: lightblue;" type="button" name="button" class = "disabled" onclick="diamondClick()">DIAMONDS</button></td>
+      </tr>
+      <tr>
+       <!-- <td><p class="miners" id="grMiner">Cost: 0</p></td>-->
+	    <td><br></td>
+        <td><p class="miners" id="sMiner">Cost: 200</p></td>
+        <td><p class="miners" id="cMiner">Cost: 500</p></td>
+        <td><p class="miners" id="iMiner">Cost: 1000</p></td>
+        <td><p class="miners" id="goMiner">Cost: 2000</p></td>
+        <td><p class="miners" id="dMiner">Cost: 5000</p></td>
+      </tr>
+      <!--<tr>
+        <td><button style="background-color: white;" type="button" class="btn" onclick="bGrMiner()">Buy Miner</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" onclick="bSMiner()">Buy Miner</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" onclick="bCMiner()">Buy Miner</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" onclick="bIMiner()">Buy Miner</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" onclick="bGoMiner()">Buy Miner</button></td>
+        <td><button style="background-color: white;" type="button" class="btn" onclick="bDiaMiner()">Buy Miner</button></td>
+      </tr>
+      <tr>
+        <td><p class="minersC" id="grMinerC">Miner Cost: 0</p></td>
+        <td><p class="minersC" id="sMinerC">Miner Cost: 0</p></td>
+        <td><p class="minersC" id="cMinerC">Miner Cost: 0</p></td>
+        <td><p class="minersC" id="iMinerC">Miner Cost: 0</p></td>
+        <td><p class="minersC" id="goMinerC">Miner Cost: 0</p></td>
+        <td><p class="minersC" id="dMinerC">Miner Cost: 0</p></td>
+      </tr>-->
+    </table>
+  </body>
 </html>
